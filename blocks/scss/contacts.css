@@ -1,0 +1,16 @@
+.contacts__link {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+
+.contacts__link:before {
+  content: url(../img/icons/telephone.png);
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+}
+
+.contacts {
+  margin-right: 50px;
+}

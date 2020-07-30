@@ -1,0 +1,40 @@
+body {
+    font-family: 'Play', 'Alegreya Sans';
+    
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1140px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    margin-top: 0px;
+}
+
+.first-screen {
+    background-color: rgb(245, 245, 245);
+}

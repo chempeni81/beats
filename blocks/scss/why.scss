@@ -1,0 +1,114 @@
+.why {
+    padding-top: 100px;
+    position: relative;
+    padding-bottom: 45px;
+        &:after {
+            content: '';
+            width: 0px;
+            height: 0px;
+            margin-top: 25px;
+            position: absolute;
+            margin-left: -24px;
+            border-left: 17px solid transparent;
+            border-right: 22px solid transparent;
+            transform: rotate(-14deg);
+            border-bottom: 31px solid #E01F3D;
+            z-index: 10;
+        }
+        .why__subtitle {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #666666;;
+        }
+        .why__desc {
+                .why__icons {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 58px;
+                    padding-bottom: 32px;
+                    justify-content: space-between;
+                        .why__battery {
+                            width: 125px;
+                            height: 125px;
+                            background: rgb(245, 245, 245);
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-left: 64px;
+                        }
+                        .why__bubbles{
+                            display: flex;
+                            align-items: center;
+                                .why__bubbles_left {
+                                    width: 13px;
+                                    height: 13px;
+                                    background: rgb(245, 245, 245);
+                                    border-radius: 50%;
+                                    margin-right: 12px;
+                                }
+                                .why__bubbles_center {
+                                    width: 21px;
+                                    height: 21px;
+                                    background: rgb(245, 245, 245);
+                                    border-radius: 50%;
+                                    margin-right: 12px;
+                                }
+                                .why__bubbles_right {
+                                    width: 13px;
+                                    height: 13px;
+                                    background: rgb(245, 245, 245);
+                                    border-radius: 50%;
+                                }
+                        }
+                        .why__speaker {
+                            width: 125px;
+                            height: 125px;
+                            background: rgb(245, 245, 245);
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                        }
+                        .why__watch {
+                            width: 125px;
+                            height: 125px;
+                            background: rgb(245, 245, 245);
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 126px;
+                        }
+                }
+                .why__text {
+                    display: flex;
+                    margin-right: 54px;
+                        .why__text_desc {
+                            text-align: center;
+                            margin-right: 93px;
+                                &:last-child {
+                                    margin-right: 0px;
+                                }
+                                .why__text_title {
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 24px;
+                                    line-height: 28px;
+                                }
+                                .why__text_text {
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #666666;
+                                    padding-top: 23px;
+                                }
+                        } 
+                }
+        }
+}

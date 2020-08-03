@@ -1,0 +1,50 @@
+.team {
+    margin-bottom: 50px;
+}
+
+.team__list {
+    display: flex;
+    justify-content: space-between;
+        .team__item {
+            text-align: center;
+                .team__img {
+                    margin-bottom: 17px;
+                }
+                .team__name {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #292929;
+                    margin-bottom: 9px;
+                    position: relative;
+                        &::after {
+                            content: '';
+                            width: 0; 
+                            height: 0; 
+                            border-left: 4px solid transparent;
+                            border-right: 4px solid transparent;
+                            border-top: 8px solid #E01F3D;
+                            margin-top: 9px;
+                            position: absolute;
+                            margin-left: 3px;
+                        }
+                }
+                .team__job {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #292929;
+                    margin-bottom: 9px;
+                }
+                .team__text {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #666666;
+                }
+        }
+}
+

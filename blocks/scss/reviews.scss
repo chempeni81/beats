@@ -1,0 +1,54 @@
+.review {
+    margin-bottom: 86px;
+}
+
+.review__section {
+    display: flex;
+    align-items: center;
+    background: #F8FAF9;
+    padding: 50px 46px 35px 46px;
+    margin-bottom: 30px;
+        .review__img_img {
+            margin-right: 20px;
+        }
+        .review__subtitle {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            color: #292929;
+            margin-bottom: 33px;
+        }
+        .review__text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #666666;
+            margin-bottom: 33px;
+        }
+        .review__name {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            color: #292929;
+        }
+}
+
+.review__list {
+    display: flex;
+    background: white;
+    justify-content: center;
+        .review__img {
+            object-fit: cover;
+            width: 74px;
+            height: 74px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 13px;
+        }
+        .review__img_active {
+            border: 4px solid #E01F3D;
+        }        
+}

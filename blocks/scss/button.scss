@@ -6,9 +6,8 @@
     font-weight: bold;
     border: none;
     text-transform: uppercase;
-}
-
-.button:hover {
-    background: rgb(202, 27, 54);
+        &:hover {
+            background: rgb(202, 27, 54);
+        }
 }
 

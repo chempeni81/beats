@@ -1,0 +1,33 @@
+.paginator {
+    padding-top: 125px;
+    margin-right: 40px;
+        .paginator__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                .paginator__item {
+                    margin-bottom: 12px;
+                        .paginator__link {
+                            opacity: 0.6;
+                            width: 9px;
+                            height: 9px;
+                            border-radius: 50%;
+                            background: black;
+                            display: block;
+                        }
+                }
+                .paginator__item_active {
+                    border: 1px solid red;
+                    width: 18px;
+                    height: 18px;
+                    background: transparent;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+        }
+}
+
+

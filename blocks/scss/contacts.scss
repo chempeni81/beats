@@ -4,14 +4,15 @@
     color: black;
 }
 
-.contacts__link:before {
-    content: url(../img/icons/telephone.png);
+.contacts:before {
+    content: url('./../css/img/icons/phone.png');
     width: 14px;
     height: 14px;
     margin-right: 3px;
+    display: inline-block;
 }
 
 .contacts {
     
-    margin-right: 50px;
+    margin-right: 82px;
 }

@@ -1,0 +1,65 @@
+body {
+  font-family: 'Play', 'Alegreya Sans';
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0px; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+a {
+  color: inherit; }
+
+.main-page-wrapper {
+  width: 100%; }
+
+.container {
+  margin: 0 auto;
+  width: 1000px; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+ul, li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal; }
+
+p {
+  margin-top: 0px; }
+
+.first-screen {
+  background-color: whitesmoke;
+  position: relative; }
+
+.first-screen:after {
+  content: '';
+  width: 46.32px;
+  height: 10.38px;
+  background: #C4C4C4;
+  position: absolute;
+  left: 1124px;
+  transform: rotate(-45deg);
+  margin-top: -9px; }
+
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #292929; }
+
+input {
+  outline: none; }
+
+textarea {
+  outline: none; }
+
+/*# sourceMappingURL=base.css.map */

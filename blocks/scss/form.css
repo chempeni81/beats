@@ -1,5 +1,5 @@
 .form-section {
-  background: url("./img/icons/decor.jpg") #161616;
+  background: url("./img/icons/decor.jpg") center center no-repeat #161616;
   position: relative; }
   .form-section:after {
     content: url("./img/icons/Polygon.png");

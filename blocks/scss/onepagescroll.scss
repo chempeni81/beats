@@ -1,0 +1,43 @@
+.onepagescroll {
+    position: fixed;
+    top: 25%;
+    right: 6rem;
+    z-index: 100;
+    
+}        
+.onepagescroll__item {
+    margin-bottom: 0.3125rem;
+
+    &--active {
+        .onepagescroll__link {
+            border-color: red;
+                &:before {
+                    background-color: red;
+                }
+        }
+    }
+}
+
+.onepagescroll__link {
+    width: 1.125rem;
+    height: 1.125rem;
+    border: 0.0625rem solid transparent;
+    position: relative;
+    border-radius: 50%;
+    display: block;
+        &:before {
+            content: '';
+            width: 0.5625rem;
+            height: 0.5625rem;
+            background: #292929;
+            border-radius: 50%;
+            opacity: 0.6;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+}
+
+
+    

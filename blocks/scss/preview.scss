@@ -1,23 +1,23 @@
 .preview {
     display: flex;
     justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
         .preview__desc {
             margin-right: 0px;
-            padding-top: 33px;
-                .title_left {
+            padding-top: 2.0625rem;
+                .title-left {
                     text-align: left;
                 }
-                .preview__desc_info {
-                    font-size: 21px;
-                    line-height: 25px;
+                .preview__desc-info {
+                    font-size: 1.3125rem;
+                    line-height: 1.5625rem;
                     color: black;
-                    padding-top: 32px;
-                    padding-bottom: 32px;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
                 }
         }
-        .preview__headphones {
-            margin-right: 42px;
-        }
+        
 }
 
 

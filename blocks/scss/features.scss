@@ -1,15 +1,15 @@
 .features {
-    padding-bottom: 40px;
+    
         .features__list {
             display: flex;
-            margin-top: -40px;
+            
                 .features__item {
                     display: flex;
                     align-items: center;
-                    margin-right: 30px;
-                    width: 153px;
+                    margin-right: 1.875rem;
+                    width: 9.5625rem;
                         .features__img {
-                            margin-right: 8px;
+                            margin-right: 0.5rem;
                         }
                 }
         }

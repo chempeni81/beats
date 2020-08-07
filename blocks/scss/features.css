@@ -1,13 +1,11 @@
-.features__list {
-  display: flex;
-}
+.features .features__list {
+  display: flex; }
+  .features .features__list .features__item {
+    display: flex;
+    align-items: center;
+    margin-right: 1.875rem;
+    width: 9.5625rem; }
+    .features .features__list .features__item .features__img {
+      margin-right: 0.5rem; }
 
-.features__item {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-}
-
-.features__img {
-  margin-right: 20px;
-}
+/*# sourceMappingURL=features.css.map */

@@ -1,0 +1,7 @@
+.socials__item-vk .socials__link {
+  background: url(../img/icons/css_sprites.png) -122px -10px; }
+
+.socials__item-fb .socials__link:hover {
+  background-position: -122px -66px; }
+
+/*# sourceMappingURL=socials.css.map */

@@ -1,19 +1,17 @@
 .menu__item {
-  margin-right: 40px;
-  list-style: none;
-}
+  margin-right: 1.0625rem;
+  list-style: none; }
 
 .menu__item:last-child {
-  margin-right: 0px;
-}
+  margin-right: 0px; }
 
 .menu__list {
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 .menu__link {
-  font-size: 18px;
+  font-size: 1.125rem;
   text-decoration: none;
-  color: black;
-}
+  color: black; }
+
+/*# sourceMappingURL=menu.css.map */

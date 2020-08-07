@@ -1,37 +1,53 @@
 .review {
-    margin-bottom: 86px;
+    margin-bottom: 5.375rem;
+}
+
+.review__section--circle {
+    position: relative;
+    &:before {
+        content: '';
+        width: 5.1875rem;
+        height: 5.1875rem;
+        background: white;
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        top: -4.0625rem;
+    }
 }
 
 .review__section {
+    overflow: hidden;
     display: flex;
     align-items: center;
     background: #F8FAF9;
-    padding: 50px 46px 35px 46px;
-    margin-bottom: 30px;
-        .review__img_img {
-            margin-right: 20px;
+    padding: 3.125rem 2.875rem 2.1875rem 2.875rem;
+    margin-bottom: 1.0625rem;
+    margin-top: 2.3125rem;
+        .review__photo {
+            margin-right: 1.25rem;
         }
         .review__subtitle {
             font-style: normal;
             font-weight: bold;
-            font-size: 24px;
-            line-height: 28px;
+            font-size: 1.5rem;
+            line-height: 1.75rem;
             color: #292929;
-            margin-bottom: 33px;
+            margin-bottom: 2.0625rem;
         }
         .review__text {
             font-style: normal;
             font-weight: normal;
-            font-size: 16px;
-            line-height: 19px;
+            font-size: 1rem;
+            line-height: 1.1875rem;
             color: #666666;
-            margin-bottom: 33px;
+            margin-bottom: 2.0625rem;
         }
         .review__name {
             font-style: normal;
             font-weight: bold;
-            font-size: 18px;
-            line-height: 21px;
+            font-size: 1.125rem;
+            line-height: 1.3125rem;
             color: #292929;
         }
 }
@@ -40,15 +56,18 @@
     display: flex;
     background: white;
     justify-content: center;
+        .review__item {
+            margin-right: 0.8125rem;
+        }
         .review__img {
             object-fit: cover;
-            width: 74px;
-            height: 74px;
+            width: 4.625rem;
+            height: 4.625rem;
             border-radius: 50%;
             overflow: hidden;
-            margin-right: 13px;
+            
         }
-        .review__img_active {
-            border: 4px solid #E01F3D;
+        .review__img--active {
+            border: 0.25rem solid #E01F3D;
         }        
 }

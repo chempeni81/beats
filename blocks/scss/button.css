@@ -1,13 +1,12 @@
 .button {
   background: #e01f3d;
-  border-radius: 100px;
-  padding: 21px 41px;
+  border-radius: 6.25rem;
+  padding: 1.3125rem 2.5625rem;
   color: white;
   font-weight: bold;
   border: none;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
+  .button:hover {
+    background: #ca1b36; }
 
-.button:hover {
-  background: #ca1b36;
-}
+/*# sourceMappingURL=button.css.map */

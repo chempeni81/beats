@@ -17,7 +17,10 @@ a {
 
 .container {
   margin: 0 auto;
-  width: 1000px; }
+  width: 58.75rem; }
+
+* {
+  box-sizing: border-box; }
 
 ul {
   padding: 0;
@@ -37,21 +40,29 @@ p {
   background-color: whitesmoke;
   position: relative; }
 
+.first-screen__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
 .first-screen:after {
   content: '';
-  width: 46.32px;
-  height: 10.38px;
+  width: 2.875rem;
+  height: 0.625rem;
   background: #C4C4C4;
   position: absolute;
-  left: 1124px;
+  left: 70rem;
   transform: rotate(-45deg);
-  margin-top: -9px; }
+  bottom: 0; }
 
 .title {
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 52px;
+  font-size: 3rem;
+  line-height: 3.25rem;
   text-align: center;
   text-transform: uppercase;
   color: #292929; }
@@ -61,5 +72,11 @@ input {
 
 textarea {
   outline: none; }
+
+.section {
+  min-height: 40.625rem;
+  height: 100vh;
+  display: flex;
+  align-items: center; }
 
 /*# sourceMappingURL=base.css.map */

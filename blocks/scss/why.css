@@ -35,6 +35,11 @@
       display: none; }
   .why__item .why__item-textcontent {
     text-align: center; }
+  .why__item .why__item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
 
 .why__subtitle {
   font-style: normal;

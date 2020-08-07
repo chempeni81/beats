@@ -43,6 +43,12 @@
         .why__item-textcontent {
             text-align: center;
         }
+        .why__item-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 }
 
 .why__subtitle {
@@ -69,6 +75,7 @@
     line-height: 28px;
     color: #292929;
     margin-bottom: 20px;
+    
 }
 
 .why__item-circle {

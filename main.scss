@@ -1,7 +1,11 @@
+@import './layout/scss/variables.scss';
+@import './layout/scss/media.scss';
 @import './layout/scss/fonts.scss';
 @import './layout/scss/base.scss';
 
+
 @import './blocks/scss/header.scss';
+@import './blocks/scss/hamburger.scss';
 @import './blocks/scss/logo.scss';
 @import './blocks/scss/contacts.scss';
 @import './blocks/scss/button.scss';
@@ -15,5 +19,7 @@
 @import './blocks/scss/form.scss';
 @import './blocks/scss/onepagescroll.scss';
 @import './blocks/scss/footer.scss';
+
+
 
 

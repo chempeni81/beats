@@ -1,7 +1,21 @@
+.contacts {
+    display: flex;
+    align-items: center;
+    padding-top: 7px;
+        @include phones {
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+}
+
 .contacts__link {
     text-decoration: none;
     font-size: 1.125rem;
     color: black;
+    white-space: nowrap;
+        @include tablets {
+            display: none;
+        }
 }
 
 .contacts:before {
@@ -10,5 +24,9 @@
     height: 0.875rem;
     margin-right: 0.1875rem;
     display: inline-block;
+    flex-shrink: 0;
+        @include tablets {
+            display: none;
+        }
 }
 

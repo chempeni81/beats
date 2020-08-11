@@ -1,8 +1,5 @@
-.logo__img {
-  height: 2.5rem;
-  width: 2.5rem; }
-
 .logo {
-  margin-right: 1.9375rem; }
+  min-height: 2.5rem;
+  min-width: 2.5rem; }
 
 /*# sourceMappingURL=logo.css.map */

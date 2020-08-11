@@ -1,5 +1,11 @@
+.menu {
+    margin: 0 30px;
+    padding-top: 7px;
+}
+
 .menu__item {
     margin-right: 1.0625rem;
+    margin-bottom: 0.625rem;
     list-style: none;
 }
 
@@ -9,11 +15,16 @@
 
 .menu__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include tablets {
+        display: none;
+    }
 }
 
 .menu__link {
     font-size: 1.125rem;
     text-decoration: none;
     color: black;
+    white-space: nowrap;
 }

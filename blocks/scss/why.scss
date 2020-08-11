@@ -29,6 +29,9 @@
             top: 18%;
             right: 0px;
             position: absolute;
+                @include tablets {
+                    display: none;
+                }
 
         }
         &:first-child {
@@ -42,12 +45,25 @@
         }
         .why__item-textcontent {
             text-align: center;
+                @include phones {
+                    text-align: left;
+                }
         }
         .why__item-content {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+                @include phones {
+                    margin-left: 1rem;
+                    align-items: flex-start;
+                }
+        }
+        @include phones {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0 0;
         }
 }
 
@@ -60,12 +76,23 @@
     color: #666666;
     padding-right: 10.9375rem;
     padding-left: 10.9375rem;
-    padding-top: 1.6875rem;
-    margin-bottom: 30px;
+    padding-top: 1.625rem;
+    margin-bottom: 3.625rem;
+        @include tablets {
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+        @include phones {
+            padding: 0 1rem;
+            margin-bottom: 0;
+        }
 }
 
 .why__desc {
     display: flex;
+        @include phones {
+            flex-direction: column;
+        }
 }
 
 .why__item-title {
@@ -74,17 +101,29 @@
     font-size: 24px;
     line-height: 28px;
     color: #292929;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+        @include tablets {
+            text-align: center;
+        }
+        @include phones {
+            text-align: left;
+        }
     
 }
 
 .why__item-circle {
-    width: 7.8125rem;
-    height: 7.8125rem;
+    min-width: 124px;
+    min-height: 124px;
     background: rgb(245, 245, 245);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.8125rem;
+        @include phones {
+            margin-bottom: 0;
+            
+        }
+    
+    
 }

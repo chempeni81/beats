@@ -3,7 +3,12 @@
     top: 25%;
     right: 6rem;
     z-index: 100;
-    
+        @include tablets {
+            display: none;
+        }
+        @include phones {
+            display: none;
+        }
 }        
 .onepagescroll__item {
     margin-bottom: 0.3125rem;

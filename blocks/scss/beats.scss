@@ -19,7 +19,22 @@
     padding-top: 4.1875rem;
     padding-bottom: 5.8125rem;
     margin-bottom: 3.875rem;
+        .beats__content {
+            display: flex;
+            
+                @include tablets {
+                    flex-direction: column;
+                    
+
+                }
+        }
         .beats__link {
+                @include tablets {
+                    padding-bottom: 50%;
+                }
+                @include phones {
+                    padding-bottom: 70%;
+                }
             .beats__link-left {
                 width: 1.25rem;
                 height: 1.25rem;
@@ -30,6 +45,10 @@
                 border-right: transparent;
                 border-top: transparent;
                 margin-right: 1.875rem;
+                @include tablets {
+                    margin-right: 0;
+                }
+                
             }
             .beats__link-right {
                 width: 1.25rem;
@@ -44,12 +63,38 @@
             
         }
         .beats__img {
+            
+            flex: 50%;
             margin-right: 2.1875rem;
             margin-top: 1.875rem;
+            border-radius: 50%;
+                @include tablets {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 2.1875rem;
+                    width: 47.5%;
+                    margin-left: 29%;
+                }
+                @include phones {
+                    width: 73%;
+                    margin-left: 15%;
+                }
         }
         .beats__desc {
+            flex: 50%;
+            @include tablets {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             .beats__desc-menu {
                 margin-bottom: 1.875rem;
+                    @include tablets {
+                        display: none;
+                    }
+
                     .beats__desc-button {
                         width: 5.6875rem;
                         height: 5.6875rem;
@@ -67,6 +112,9 @@
                 line-height: 2.625rem;
                 text-transform: uppercase;
                 margin-bottom: 1.5rem;
+                    @include tablets {
+                        text-align: center;
+                    }
             }
             .beats__desc-text {
                 font-style: normal;
@@ -75,11 +123,19 @@
                 line-height: 1.1875rem;
                 color: #666666;
                 margin-bottom: 3.0625rem;
+                @include tablets {
+                    text-align: center;
+                }
                 
             }
             .beats__desc-specs {
                 display: flex;
                 margin-bottom: 3.125rem;
+                    @include tablets {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                     .beats__desc-subtitle {
                         font-style: normal;
                         font-weight: normal;
@@ -87,6 +143,9 @@
                         line-height: 1.1875rem;
                         color: #666666;
                         margin-right: 5.8125rem;
+                        &:last-child {
+                            margin-right: 0;
+                        }
                     }
                     .beats__desc-parameter {
                         font-style: normal;
@@ -107,6 +166,7 @@
                         text-transform: uppercase;
                         color: #151515;
                         margin-right: 1.5625rem;
+                        white-space: nowrap;
                     }
             }
         }

@@ -13,6 +13,9 @@
         border-radius: 50%;
         left: 50%;
         top: -4.0625rem;
+            @include tablets {
+                left:45%;
+            }
     }
 }
 
@@ -24,9 +27,29 @@
     padding: 3.125rem 2.875rem 2.1875rem 2.875rem;
     margin-bottom: 1.0625rem;
     margin-top: 2.3125rem;
-        .review__photo {
-            margin-right: 1.25rem;
+        @include tablets {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
+        .review__section-photo {
+            
+            margin-right: 1.25rem;
+            min-width: 32%;
+                .review__img-img {
+                    @include tablets {
+                        width: 133px;}
+                }
+                @include tablets {
+                    width: 133px;
+                    justify-content: center;
+                    margin-right: 0;
+                    margin-bottom: 37px;
+                    display: flex;
+                }
+        }
+
+
         .review__subtitle {
             font-style: normal;
             font-weight: bold;
@@ -34,6 +57,9 @@
             line-height: 1.75rem;
             color: #292929;
             margin-bottom: 2.0625rem;
+            @include tablets {
+                text-align: center;
+            }
         }
         .review__text {
             font-style: normal;
@@ -42,6 +68,9 @@
             line-height: 1.1875rem;
             color: #666666;
             margin-bottom: 2.0625rem;
+            @include tablets {
+                text-align: center;
+            }
         }
         .review__name {
             font-style: normal;
@@ -49,6 +78,9 @@
             font-size: 1.125rem;
             line-height: 1.3125rem;
             color: #292929;
+            @include tablets {
+                text-align: center;
+            }
         }
 }
 

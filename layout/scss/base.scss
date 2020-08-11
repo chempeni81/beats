@@ -1,3 +1,14 @@
+html {
+    font-size: $baseFontSize;
+        @include tablets {
+            font-size: $baseFontSize - 1px;
+        }
+        @include phones {
+            font-size: $baseFontSize - 2px;
+        }      
+    
+}
+
 body {
     font-family: 'Play', 'Alegreya Sans';
     line-height: 1.42;
@@ -17,11 +28,14 @@ a {
 
 .main-page-wrapper {
     width: 100%;
+    min-height: 100%;
+    overflow: hidden;
 }
 
 .container {
     margin: 0 auto;
-    width: 58.75rem;
+    width: 95%;
+    max-width: $containerWidth;
 }
 
 * {
@@ -46,29 +60,9 @@ p {
     margin-top: 0px;
 }
 
-.first-screen {
-    background-color: rgb(245, 245, 245);
-    position: relative;
-}
-
-.first-screen__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.first-screen:after {
-    content: '';
-    width: 2.875rem;
-    height: 0.625rem;
-    background: #C4C4C4;
-    position: absolute;
-    left: 70rem;
-    transform: rotate(-45deg);
-    bottom: 0;
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .title {

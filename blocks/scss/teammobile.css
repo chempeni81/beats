@@ -1,23 +1,22 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 7 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\onepagescroll.scss, in `tablets'
-        from line 7 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\onepagescroll.scss
+        on line 5 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\teammobile.scss, in `tablets'
+        from line 5 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\teammobile.scss
 
-2:     position: fixed;
-3:     top: 25%;
-4:     right: 6rem;
-5:     z-index: 100;
-6:     
-7:         @include tablets {
-8:             display: none;
-9:         }
-10:         @include phones {
-11:             display: none;
-12:         }
+1: .team--version--mobile {
+2:     display: none;
+3:     flex-direction: column;
+4:     justify-content: center;
+5:     @include tablets {
+6:         display: flex;
+7:     }
+8:         
+9: }
+10: 
 
 Backtrace:
-C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\onepagescroll.scss:7:in `tablets'
-C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\onepagescroll.scss:7
+C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\teammobile.scss:5:in `tablets'
+C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\teammobile.scss:5
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 7 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\onepagescroll.scss, in `tablets'\A         from line 7 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\onepagescroll.scss\A \A 2:     position: fixed;\A 3:     top: 25%;\A 4:     right: 6rem;\A 5:     z-index: 100;\A 6:     \A 7:         @include tablets {\A 8:             display: none;\A 9:         }\A 10:         @include phones {\A 11:             display: none;\A 12:         }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 5 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\teammobile.scss, in `tablets'\A         from line 5 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\teammobile.scss\A \A 1: .team--version--mobile {\A 2:     display: none;\A 3:     flex-direction: column;\A 4:     justify-content: center;\A 5:     @include tablets {\A 6:         display: flex;\A 7:     }\A 8:         \A 9: }\A 10: "; }

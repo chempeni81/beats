@@ -3,6 +3,7 @@
     top: 25%;
     right: 6rem;
     z-index: 100;
+    
         @include tablets {
             display: none;
         }
@@ -30,8 +31,10 @@
     position: relative;
     border-radius: 50%;
     display: block;
+    
         &:before {
             content: '';
+            display: block;
             width: 0.5625rem;
             height: 0.5625rem;
             background: #292929;
@@ -45,4 +48,6 @@
 }
 
 
-    
+.onepagescroll--light .onepagescroll__list .onepagescroll__item .onepagescroll__link:before {
+    background: white;
+}    

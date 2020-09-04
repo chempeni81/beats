@@ -1,0 +1,30 @@
+.beats__desc-menu {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 342%;
+    height: 100vh;
+    top: -174px;
+    left: -746px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(40px);
+    border-radius: 4px;
+    display: none;
+        .dropdown-menu__item {
+            display: flex;
+            
+            padding: 28px 30px;
+                .dropdown-menu__item-specs {
+                    display: flex;
+                    justify-content: space-between;
+                    flex: 1;
+                }
+        }
+        .dropdown-menu__item-icon {
+            margin-right: 2rem;
+        }
+}

@@ -7,7 +7,7 @@ Error: Undefined mixin 'tablets'.
 12:         position: absolute;
 13:         border-radius: 50%;
 14:         left: 50%;
-15:         top: -4.0625rem;
+15:         top: -3.5rem;
 16:             @include tablets {
 17:                 left:45%;
 18:             }
@@ -77,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 16 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\reviews.scss, in `tablets'\A         from line 16 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\reviews.scss\A \A 11:         background: white;\A 12:         position: absolute;\A 13:         border-radius: 50%;\A 14:         left: 50%;\A 15:         top: -4.0625rem;\A 16:             @include tablets {\A 17:                 left:45%;\A 18:             }\A 19:     }\A 20: }\A 21: "; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 16 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\reviews.scss, in `tablets'\A         from line 16 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\reviews.scss\A \A 11:         background: white;\A 12:         position: absolute;\A 13:         border-radius: 50%;\A 14:         left: 50%;\A 15:         top: -3.5rem;\A 16:             @include tablets {\A 17:                 left:45%;\A 18:             }\A 19:     }\A 20: }\A 21: "; }

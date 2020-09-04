@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 25 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\beats.scss, in `tablets'
-        from line 25 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\beats.scss
+        on line 41 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\beats.scss, in `tablets'
+        from line 41 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\beats.scss
 
-20:     padding-bottom: 5.8125rem;
-21:     margin-bottom: 3.875rem;
-22:         .beats__content {
-23:             display: flex;
-24:             
-25:                 @include tablets {
-26:                     flex-direction: column;
-27:                     
-28: 
-29:                 }
-30:         }
+36:     width: 100%;
+37:     height: 100%;
+38:         .beats__content {
+39:             display: flex;
+40:             
+41:                 @include tablets {
+42:                     flex-direction: column;
+43:                     
+44: 
+45:                 }
+46:         }
 
 Backtrace:
-C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\beats.scss:25:in `tablets'
-C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\beats.scss:25
+C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\beats.scss:41:in `tablets'
+C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\beats.scss:41
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -77,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 25 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\beats.scss, in `tablets'\A         from line 25 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\beats.scss\A \A 20:     padding-bottom: 5.8125rem;\A 21:     margin-bottom: 3.875rem;\A 22:         .beats__content {\A 23:             display: flex;\A 24:             \A 25:                 @include tablets {\A 26:                     flex-direction: column;\A 27:                     \A 28: \A 29:                 }\A 30:         }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 41 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\beats.scss, in `tablets'\A         from line 41 of C:\Users\House\Documents\My stuff\Loft school\Beats\beats page\css\blocks\scss\beats.scss\A \A 36:     width: 100%;\A 37:     height: 100%;\A 38:         .beats__content {\A 39:             display: flex;\A 40:             \A 41:                 @include tablets {\A 42:                     flex-direction: column;\A 43:                     \A 44: \A 45:                 }\A 46:         }"; }

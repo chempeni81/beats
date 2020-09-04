@@ -1,0 +1,68 @@
+.product-menu-section {
+    background: url(./img/photos/powerbeats.png) center center/cover no-repeat;
+    position: relative;
+    color: #FFFFFF;
+        .product-menu-title__white {
+            font-family: Play;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 3rem;
+            line-height: 3.25rem;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            top: 7.1875rem;
+            left: 5.25rem;
+            position: absolute;
+        }
+        .product-menu {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
+                .product-menu__item {
+                    display: flex;
+                        .product-menu__title {
+                            position: relative;
+                            width: 6.25rem;
+                            text-decoration: none;
+                                                    
+                            
+                                .product-menu__title-text {
+                                    position: absolute;
+                                    white-space: nowrap;
+                                    font-family: Alegreya Sans;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 2.25rem;
+                                    line-height: 2.6875rem;
+                                    transform: rotate(-90deg);
+                                    width: 100%;
+                                    bottom: 4.1875rem;
+                                }
+                        }
+                        .product-menu__content {
+                            background: rgba(51, 53, 55, 0.9);
+                            width: 0;
+                            position: relative;
+                            overflow: hidden;
+                            transition: width .7s;
+                                .product-menu__container {
+                                    padding: 31px 53px 31px 38px;
+                                }
+                        }
+                }
+                .product-menu__item--silver {
+                    background: #999999;
+                }
+                .product-menu__item--black {
+                    background: #151515;
+                }
+                .product-menu__item--red {
+                    background: #E01F3C;
+                }
+        }
+}
+
+
+

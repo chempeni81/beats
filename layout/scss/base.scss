@@ -28,8 +28,14 @@ a {
 
 .main-page-wrapper {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     overflow: hidden;
+}
+
+.maincontent {
+    height: 100%;
+    transition: transform 1s;
+    will-change: transform;
 }
 
 .container {
@@ -86,7 +92,7 @@ textarea {
 
 .section {
     min-height: 40.625rem;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
 }

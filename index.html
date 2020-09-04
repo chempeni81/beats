@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beats</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="main.css">
+    
 </head>
 <body>
     <div class="wrapper main-page-wrapper">
         <div class="maincontent">
-            <section class="section first-screen">
+            <section data-sidemenu-theme="white" data-section-id="first-screen" class="section first-screen">
                 <div class="container first-screen__container">
                     <header class="header">
                         <a href="/" class="logo">
@@ -17,19 +19,19 @@
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="" class="menu__link">О нас</a>
+                                    <a href="" data-scroll-to="why" class="menu__link">О нас</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="" class="menu__link">Наушники</a>
+                                    <a href="" data-scroll-to="beats" class="menu__link">Наушники</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="" class="menu__link">Команда</a>
+                                    <a href="" data-scroll-to="team" class="menu__link">Команда</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="" class="menu__link">Цвета</a>
+                                    <a href="" data-scroll-to="menu" class="menu__link">Цвета</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="" class="menu__link">Отзывы</a>
+                                    <a href="" data-scroll-to="review" class="menu__link">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
                                     <a href="" class="menu__link">Как мы работаем</a>
@@ -53,7 +55,7 @@
                             <div class="preview__desc">
                                 <h1 class="title title-left">Беспроводные наушники Beats Solo 3</h1>
                                 <div class="preview__desc-info">Встречайте новую версию наушников из линейки Powerbeats</div>
-                                <button class="button">Заказать</button>
+                                <button data-scroll-to="form" class="button">Заказать</button>
                             </div>
                             <div class="preview__headphones">
                                 <img src="./img/photos/Ellipse 5.png" alt="" class="preview__headphones-img">
@@ -84,7 +86,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section why-section">
+            <section data-sidemenu-theme="white" data-section-id="why" class="section why-section">
                 <div class="container">
                     <div class="title">Почему beats solo 3?</div>
                     <div class="why__subtitle">Процессор W1 работает невероятно эффективно и позволяет легко подключать наушники к различным устройствам Apple?</div>
@@ -137,47 +139,249 @@
                     </ul>
                 </div>
             </section>
-            <section class="section beats-section">
-                <div class="container">
-                    <div class="beats">
-                        <div class="beats__link">
-                            <a href="" class="beats__link-left"></a>
-                        </div>
-                        <div class="beats__content">
-                            <div class="beats__img">
-                                <img src="./img/photos/Ellipse 6.png" alt="" class="beats__img-img">
+            <section data-sidemenu-theme="white" data-section-id="beats" class="section beats-section">
+                <div class="container slider-container">
+                    <div class="slider__list" id="sliderRoot">
+                        <div class="beats">
+                            <div class="beats__link">
+                                <div class="beats__link-left"></div>
                             </div>
-                            <div class="beats__desc">
-                                <div class="beats__desc-menu">
-                                    <div class="beats__desc-button">
-                                        <img src="./img/icons/gear.png" alt="" class="beats__desc-img">
-                                    </div>
+                            <div class="beats__content">
+                                <div class="beats__img">
+                                    <img src="./img/photos/Ellipse 6.png" alt="" class="beats__img-img">
                                 </div>
-                                <div class="beats__desc-title">Beats Solo 3. Цвет "Атласное серебро"</div>
-                                <div class="beats__desc-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, culpa. Cupiditate, pariatur inventore? Quia consectetur dolorum accusantium doloribus reiciendis quasi.</div>
-                                <div class="beats__desc-specs">
-                                    <div class="beats__desc-subtitle">Зарядка
-                                        <div class="beats__desc-parameter">2 часа</div>
+                                <div class="beats__desc">
+                                    <div class="beats__desc-menu">
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="beats__desc-button">
+                                            <img src="./img/icons/gear.png" alt="" class="beats__desc-img">
+                                        </div>
                                     </div>
-                                    <div class="beats__desc-subtitle">Вес
-                                        <div class="beats__desc-parameter">215 грамм</div>
+                                    <div class="beats__desc-title">Beats Solo 3. Цвет "Атласное серебро"</div>
+                                    <div class="beats__desc-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, culpa. Cupiditate, pariatur inventore? Quia consectetur dolorum accusantium doloribus reiciendis quasi.</div>
+                                    <div class="beats__desc-specs">
+                                        <div class="beats__desc-subtitle">Зарядка
+                                            <div class="beats__desc-parameter">2 часа</div>
+                                        </div>
+                                        <div class="beats__desc-subtitle">Вес
+                                            <div class="beats__desc-parameter">215 грамм</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="beats__desc-order">
-                                    <div class="beats__desc-price">14 990 Р</div>
-                                    <button class="button" type="submit" value="Submit">Заказать</button>
+                                    <div class="beats__desc-order">
+                                        <div class="beats__desc-price">14 990 Р</div>
+                                        <button class="button" type="submit" value="Submit">Заказать</button>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="beats__link">
+                                <div class="beats__link-right"></div>
+                            </div>
                         </div>
-                        <div class="beats__link">
-                            <a href="" class="beats__link-right"></a>
+                        <div class="beats">
+                            <div class="beats__link">
+                                <div class="beats__link-left"></div>
+                            </div>
+                            <div class="beats__content">
+                                <div class="beats__img">
+                                    <img src="./img/photos/Ellipse 6.png" alt="" class="beats__img-img">
+                                </div>
+                                <div class="beats__desc">
+                                    <div class="beats__desc-menu">
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="beats__desc-button">
+                                            <img src="./img/icons/gear.png" alt="" class="beats__desc-img">
+                                        </div>
+                                    </div>
+                                    <div class="beats__desc-title">Beats Solo 3. Цвет "Красный цитрус"</div>
+                                    <div class="beats__desc-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, culpa. Cupiditate, pariatur inventore? Quia consectetur dolorum accusantium doloribus reiciendis quasi.</div>
+                                    <div class="beats__desc-specs">
+                                        <div class="beats__desc-subtitle">Зарядка
+                                            <div class="beats__desc-parameter">2 часа</div>
+                                        </div>
+                                        <div class="beats__desc-subtitle">Вес
+                                            <div class="beats__desc-parameter">215 грамм</div>
+                                        </div>
+                                    </div>
+                                    <div class="beats__desc-order">
+                                        <div class="beats__desc-price">14 990 Р</div>
+                                        <button class="button" type="submit" value="Submit">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="beats__link">
+                                <div class="beats__link-right"></div>
+                            </div>
+                        </div>
+                        <div class="beats">
+                            <div class="beats__link">
+                                <div class="beats__link-left"></div>
+                            </div>
+                            <div class="beats__content">
+                                <div class="beats__img">
+                                    <img src="./img/photos/Ellipse 6.png" alt="" class="beats__img-img">
+                                </div>
+                                <div class="beats__desc">
+                                    <div class="beats__desc-menu">
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-menu__item">
+                                                <img src="./img/icons/blu.png" alt="" class="dropdown-menu__item-icon">
+                                                <div class="dropdown-menu__item-specs">
+                                                    <div class="dropdown-menu__item-parameter">Bluetooth</div>
+                                                    <div class="dropdown-menu__item-value">4.0</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="beats__desc-button">
+                                            <img src="./img/icons/gear.png" alt="" class="beats__desc-img">
+                                        </div>
+                                    </div>
+                                    <div class="beats__desc-title">Beats Solo 3. Цвет "Green apple"</div>
+                                    <div class="beats__desc-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, culpa. Cupiditate, pariatur inventore? Quia consectetur dolorum accusantium doloribus reiciendis quasi.</div>
+                                    <div class="beats__desc-specs">
+                                        <div class="beats__desc-subtitle">Зарядка
+                                            <div class="beats__desc-parameter">2 часа</div>
+                                        </div>
+                                        <div class="beats__desc-subtitle">Вес
+                                            <div class="beats__desc-parameter">215 грамм</div>
+                                        </div>
+                                    </div>
+                                    <div class="beats__desc-order">
+                                        <div class="beats__desc-price">14 990 Р</div>
+                                        <button class="button" type="submit" value="Submit">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="beats__link">
+                                <div class="beats__link-right"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section team-section">
+            <section data-sidemenu-theme="white" data-section-id="team" class="section team-section">
                 <div class="container">
-                    <div class="team">
+                    <div class="team team--version--desktop">
                         <div class="title">команда</div>
                         <ul class="team__list">
                             <li class="team__item">
@@ -185,92 +389,240 @@
                                     <img src="./img/photos/photo-1506919258185-6078bba55d2a.jpg" alt="" class="team__img-img">
                                 </div>
                                 <div class="team__name">Борис Федорович</div>
-                                <div class="team__job">Главный технолог</div>
-                                <div class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, laudantium.</div>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <div class="team__job">Главный технолог</div>
+                                        <div class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, laudantium.</div>
+                                    </div>
+                                </div>
                             </li>
                             <li class="team__item">
                                 <div class="team__img">
                                     <img src="./img/photos/photo-1506919258185-6078bba55d2a.jpg" alt="" class="team__img-img">
                                 </div>
                                 <div class="team__name">Алла Иванова</div>
-                                <div class="team__job">Спец по упаковке</div>
-                                <div class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsum.</div>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <div class="team__job">Спец по упаковке</div>
+                                        <div class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsum.</div>
+                                    </div>
+                                </div>
                             </li>
                             <li class="team__item">
                                 <div class="team__img">
                                     <img src="./img/photos/photo-1506919258185-6078bba55d2a.jpg" alt="" class="team__img-img">
                                 </div>
                                 <div class="team__name">Кирилл Матросов</div>
-                                <div class="team__job">Дизайнер</div>
-                                <div class="team__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, repellendus!</div>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <div class="team__job">Дизайнер</div>
+                                        <div class="team__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, repellendus!</div>
+                                    </div>
+                                </div>
                             </li>
                             <li class="team__item">
                                 <div class="team__img">
                                     <img src="./img/photos/photo-1506919258185-6078bba55d2a.jpg" alt="" class="team__img-img">
                                 </div>
                                 <div class="team__name">Мила Рыжова</div>
-                                <div class="team__job">PR маркетинг</div>
-                                <div class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, animi.</div>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <div class="team__job">PR маркетинг</div>
+                                        <div class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, animi.</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="team team--version--mobile">
+                        <div class="title">команда</div>
+                        <ul class="team__list">
+                            <li class="team__item">
+                                <div class="team__name">Борис Федорович</div>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <div class="team__img">
+                                            <img src="./img/photos/photo-1506919258185-6078bba55d2a.jpg" alt="" class="team__img-img">
+                                        </div>
+                                        <div class="team__job">Главный технолог</div>
+                                        <div class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, laudantium.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__name">Алла Иванова</div>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <div class="team__img">
+                                            <img src="./img/photos/photo-1506919258185-6078bba55d2a.jpg" alt="" class="team__img-img">
+                                        </div>
+                                        <div class="team__job">Спец по упаковке</div>
+                                        <div class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsum.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item active">
+                                <div class="team__name">Кирилл Матросов</div>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <div class="team__img">
+                                            <img src="./img/photos/photo-1506919258185-6078bba55d2a.jpg" alt="" class="team__img-img">
+                                        </div>
+                                        <div class="team__job">Дизайнер</div>
+                                        <div class="team__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, repellendus!</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__name">Мила Рыжова</div>
+                                <div class="team__content">
+                                    <div class="team__content-block">
+                                        <div class="team__img">
+                                            <img src="./img/photos/photo-1506919258185-6078bba55d2a.jpg" alt="" class="team__img-img">
+                                        </div>
+                                        <div class="team__job">PR маркетинг</div>
+                                        <div class="team__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, animi.</div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="section review-section">
+            <section data-sidemenu-theme="dark" data-section-id="menu" class="section product-menu-section">
+                <h1 class="title product-menu-title__white">Цвета</h1>
+                <ul class="product-menu">
+                    <li class="product-menu__item product-menu__item--silver">
+                        <a href="" class="product-menu__title">
+                            <div class="product-menu__title-text">Атласное серебро</div>
+                            </a>
+                        <div class="product-menu__content">
+                            <div class="product-menu__container">
+                                <div class="product-menu__content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rem quidem ex officia molestiae dolore provident eveniet aperiam sed reprehenderit eaque corrupti odio, obcaecati, quos, ducimus expedita alias amet optio quam dolorem quia perferendis? Eum repellat voluptate dignissimos error ab quod quas quis impedit voluptatibus magnam unde ullam, inventore doloribus?</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-menu__item product-menu__item--black">
+                        <a href="" class="product-menu__title">
+                            <div class="product-menu__title-text">Черный матовый</div></a>
+                        <div class="product-menu__content">
+                            <div class="product-menu__container">
+                                <div class="product-menu__content-text"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-menu__item product-menu__item--red">
+                        <a href="" class="product-menu__title">
+                            <div class="product-menu__title-text">Красный цитрус</div></a>
+                        <div class="product-menu__content">
+                            <div class="product-menu__container">
+                                <div class="product-menu__content-text"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section data-sidemenu-theme="white" data-section-id="review" class="section review-section">
                 <div class="container">
                     <div class="review">
                         <div class="title">Отзывы</div>
-                        <div class="review__section review__section--circle">
-                            <div class="review__section-photo">
-                                <img src="./img/photos/photo-1458890715264-db84f7c6ef13.jpg" alt="" class="review__img-img">
-                            </div>
-                            <div class="review__desc">
-                                <div class="review__subtitle">Отличный звук</div>
-                                <div class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ipsum voluptate commodi officia magnam. Facere et ratione molestiae corrupti aliquid?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi reprehenderit modi quidem deserunt voluptatem praesentium eaque molestias aliquam quos consequuntur!</div>
-                                <div class="review__name">Билли Айлиш</div>
-                            </div>
-                        </div>
+                        <ul class="review__list review__section--circle">
+                            <li class="review__item active" data-linked-with="one">
+                                <div class="review__item-photo">
+                                    <img src="./img/photos/photo-1458890715264-db84f7c6ef13.jpg" alt="" class="review__img-img">
+                                </div>
+                                <div class="review__desc">
+                                    <div class="review__subtitle">Отличный звук</div>
+                                    <div class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ipsum voluptate commodi officia magnam. Facere et ratione molestiae corrupti aliquid?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi reprehenderit modi quidem deserunt voluptatem praesentium eaque molestias aliquam quos consequuntur!</div>
+                                    <div class="review__name">Билли Айлиш</div>
+                                </div>
+                            </li>
+                            <li class="review__item" data-linked-with="two">
+                                <div class="review__item-photo">
+                                    <img src="./img/photos/photo.jpg" alt="" class="review__img-img">
+                                </div>
+                                <div class="review__desc">
+                                    <div class="review__subtitle">Cool design</div>
+                                    <div class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ipsum voluptate commodi officia magnam. Facere et ratione molestiae corrupti aliquid?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi reprehenderit modi quidem deserunt voluptatem praesentium eaque molestias aliquam quos consequuntur!</div>
+                                    <div class="review__name">Билли Айлиш</div>
+                                </div>
+                            </li>
+                            <li class="review__item" data-linked-with="three">
+                                <div class="review__item-photo">
+                                    <img src="./img/photos/photo-1468546818829-25bb337b6646.jpg" alt="" class="review__img-img">
+                                </div>
+                                <div class="review__desc">
+                                    <div class="review__subtitle">Long battery life</div>
+                                    <div class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ipsum voluptate commodi officia magnam. Facere et ratione molestiae corrupti aliquid?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi reprehenderit modi quidem deserunt voluptatem praesentium eaque molestias aliquam quos consequuntur!</div>
+                                    <div class="review__name">Билли Айлиш</div>
+                                </div>
+                            </li>
+                        </ul>
                         <div class="review__photo">
-                            <ul class="review__list">
-                                <li class="review__item">
-                                    <img src="./img/photos/photo-1458890715264-db84f7c6ef13.jpg" alt="" class="review__img review__img--active">
+                            <ul class="review__photo-list">
+                                <li class="review__photo-item active">
+                                    <img src="./img/photos/photo-1458890715264-db84f7c6ef13.jpg" alt="" class="review__img" data-open="one">
                                 </li>
-                                <li class="review__item">
-                                    <img src="./img/photos/photo-1468546818829-25bb337b6646.jpg" alt="" class="review__img">
+                                <li class="review__photo-item">
+                                    <img src="./img/photos/photo-1468546818829-25bb337b6646.jpg" alt="" class="review__img" data-open="two">
                                 </li>
-                                <li class="review__item">
-                                    <img src="./img/photos/photo-1468546818829-25bb337b6646.jpg" alt="" class="review__img">
+                                <li class="review__photo-item">
+                                    <img src="./img/photos/photo-1468546818829-25bb337b6646.jpg" alt="" class="review__img" data-open="three">
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section form-section">
+            <section class="section player-section">
+                <div class="container">
+                  <h2 class="title">Как мы работаем</h2>
+                  <div class="player-section__container">
+                    <div class="player paused">
+                      <div class="player__wrapper">
+                        <div id="yt-player" class="player__elem"></div>
+                        <div class="player__splash"></div>
+                      </div>
+                      <div class="player__controls">
+                        <button class="player__start"></button>
+                        <div class="player__playback">
+                          <button class="player__playback-button"></button>
+                        </div>
+                        <div class="player__duration">
+                          <span class="player__duration-completed">0:00</span> :
+                          <span class="player__duration-estimate">0:00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            <section data-sidemenu-theme="dark" data-section-id="form" class="section form-section">
                 <div class="container">
                     <div class="title title-white">Закажите доставку</div>
                     <form action="" class="form">
+                        <input type="hidden" name="to" value="somewhere@gmail.com">
                         <div class="form__col">
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__title">Name</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="name" class="form__input">
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__title">Tel</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="phone" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__title">Street</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="street" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__title">House</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="house" class="form__input">
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__title">Korpus</div>
@@ -290,7 +642,7 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Comments</div>
-                                    <textarea name="" id="" class="form__input form__input-textarea"></textarea>
+                                    <textarea name="comment" id="" class="form__input form__input-textarea"></textarea>
                                 </label>
                             </div>
                             <div class="form__row">
@@ -320,8 +672,8 @@
                     </form>
                 </div>
             </section>
-            <section class="section map-section">
-                <div id="map"></div>
+            <section data-sidemenu-theme="white" data-section-id="map" class="section map-section">
+                <div id="map" class="map"></div>
                 <footer class="footer">
                     <div class="container">
                         <div class="footer__section">
@@ -369,36 +721,54 @@
             </section>
         </div>
     </div>
+    <div id="modal" class="modal">
+        <div class="modal__container">
+            <div class="modal__title">Сообщение отправлено</div>
+            <button class="button app-submit-btn">закрыть</button>
+        </div>
+    </div>
     <nav class="onepagescroll">
         <ul class="onepagescroll__list">
-            <li class="onepagescroll__item onepagescroll__item--active">
+            <li data-scroll-to="first-screen" class="onepagescroll__item">
                 <a href="" class="onepagescroll__link"></a>
             </li>
-            <li class="onepagescroll__item">
+            <li data-scroll-to="why" class="onepagescroll__item">
                 <a href="" class="onepagescroll__link"></a>
             </li>
-            <li class="onepagescroll__item">
+            <li data-scroll-to="beats" class="onepagescroll__item">
                 <a href="" class="onepagescroll__link"></a>
             </li>
-            <li class="onepagescroll__item">
+            <li data-scroll-to="team" class="onepagescroll__item">
                 <a href="" class="onepagescroll__link"></a>
             </li>
-            <li class="onepagescroll__item">
+            <li data-scroll-to="menu" class="onepagescroll__item">
                 <a href="" class="onepagescroll__link"></a>
             </li>
-            <li class="onepagescroll__item">
+            <li data-scroll-to="review" class="onepagescroll__item">
                 <a href="" class="onepagescroll__link"></a>
             </li>
-            <li class="onepagescroll__item">
+            <li data-scroll-to="form" class="onepagescroll__item">
                 <a href="" class="onepagescroll__link"></a>
             </li>
-            <li class="onepagescroll__item">
-                <a href="" class="onepagescroll__link"></a>
-            </li>
-            <li class="onepagescroll__item">
+            <li data-scroll-to="map" class="onepagescroll__item">
                 <a href="" class="onepagescroll__link"></a>
             </li>
         </ul>
     </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="reviewslider.js"></script>
+    <script src="team.js"></script>
+    <script src="modal.js"></script>
+    <script src="menu.js"></script>
+    <script src="ops.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="map.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="player.js"></script>
 </body>
 </html>
